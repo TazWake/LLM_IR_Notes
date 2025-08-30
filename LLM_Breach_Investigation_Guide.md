@@ -9,7 +9,7 @@ This guide provides a structured methodology for investigating security incident
 
 - **Baseline the System**
   - Document LLM architecture (model, APIs, embeddings, runtime environment).
-  - Capture normal behavior of prompts, responses, resource usage, and logs.
+  - Capture normal behaviour of prompts, responses, resource usage, and logs.
 
 - **Enable Logging**
   - Prompt/response logging with timestamps and user identifiers (while respecting privacy laws).
@@ -28,7 +28,7 @@ This guide provides a structured methodology for investigating security incident
   - Prompts containing suspicious instructions (e.g., jailbreaks, system prompt extraction attempts).
   - Sudden anomalies in output: policy bypasses, unusual content generation, or hallucinations.
   - Unexpected API traffic or resource spikes (e.g., CPU/GPU exhaustion).
-  - Unauthorized access to embeddings, vector stores, or training datasets.
+  - Unauthorised access to embeddings, vector stores, or training datasets.
 
 - **Differentiating AI vs Traditional Incidents**
   - *AI-specific*: Prompt injection, embedding poisoning, model theft.
@@ -44,8 +44,8 @@ This guide provides a structured methodology for investigating security incident
 
 - **System Artifacts**
   - Container/runtime logs (Docker, Kubernetes).
-  - Application logs: API requests, authentication, access failures.
-  - Memory captures if model artifacts may have been tampered with.
+  - Application logs: API requests, authentication, and access failures.
+  - Memory captures if model artefacts may have been tampered with.
 
 - **Model & Data Integrity**
   - Hashes of deployed model weights and configuration files.
@@ -64,7 +64,7 @@ This guide provides a structured methodology for investigating security incident
   - Identify injection attempts (e.g., "ignore previous instructions").
   - Detect cross-domain data leakage via multi-step prompts.
 
-- **Model Behavior Verification**
+- **Model Behaviour Verification**
   - Compare current outputs to baseline.
   - Test for backdoors or poisoned triggers (inputs producing unusual outputs).
 
@@ -86,7 +86,7 @@ This guide provides a structured methodology for investigating security incident
   - Suspend exposed APIs until validated.
 
 - **Eradication**
-  - Remove malicious artifacts (scripts, poisoned embeddings, altered configs).
+  - Remove malicious artefacts (scripts, poisoned embeddings, altered configs).
   - Rotate credentials, API keys, and session tokens.
   - Patch or re-deploy models from trusted sources.
 
@@ -105,18 +105,18 @@ This guide provides a structured methodology for investigating security incident
 
 - **Testing**
   - Conduct red-team prompt injection tests.
-  - Regularly evaluate model behavior against OWASP GenAI Top 10 risks.
+  - Regularly evaluate model behaviour against OWASP GenAI Top 10 risks.
 
 ---
 
 ## 7. Special Considerations
 
 - **On-Prem vs SaaS Investigations**
-  - *On-Prem*: Full control of logs, artifacts, and memory images. Traditional forensic techniques apply.
+  - *On-Prem*: Full control of logs, artefacts, and memory images. Traditional forensic techniques apply.
   - *SaaS (e.g., OpenAI, Anthropic, Claude)*: Limited visibility. Depend on provider logs, API telemetry, and contractual obligations.
 
 - **Ethics & Privacy**
-  - Ensure sensitive training or user data is handled according to GDPR, HIPAA, and organizational policies.
+  - Ensure sensitive training or user data is handled according to GDPR, HIPAA, and organisational policies.
   - Apply legal holds where necessary for compliance.
 
 ---
@@ -130,14 +130,12 @@ This guide provides a structured methodology for investigating security incident
 
 ## Quick Checklist for LLM Breach Investigations
 
-1. ✅ Identify if incident is AI-specific or traditional.
-2. ✅ Collect prompts, responses, logs, and model artifacts.
+1. ✅ Identify if the incident is AI-specific or traditional.
+2. ✅ Collect prompts, responses, logs, and model artefacts.
 3. ✅ Verify model integrity (hashes, configs, embeddings).
-4. ✅ Analyze for prompt injection, poisoning, or exfiltration attempts.
-5. ✅ Contain and eradicate malicious artifacts.
+4. ✅ Analyse for prompt injection, poisoning, or exfiltration attempts.
+5. ✅ Contain and eradicate malicious artefacts.
 6. ✅ Restore clean versions of models and embeddings.
 7. ✅ Apply lessons learned to improve monitoring and access controls.
 
 ---
-
-**End of Guide**
