@@ -121,6 +121,10 @@ This guide provides a structured methodology for investigating security incident
 
 ---
 
+<img width="1589" height="2242" alt="LLM_Breach_Investigation_Flowchart" src="https://github.com/user-attachments/assets/a74b8186-6157-4f9b-82e8-aa634755f789" />
+
+---
+
 ## Key References
 - **OWASP GenAI Security & Incident Response Guides**
 - **MITRE ATLAS (Adversarial Threat Landscape for AI Systems)**
