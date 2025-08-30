@@ -134,12 +134,12 @@ This guide provides a structured methodology for investigating security incident
 
 ## Quick Checklist for LLM Breach Investigations
 
-1. ✅ Identify if the incident is AI-specific or traditional.
-2. ✅ Collect prompts, responses, logs, and model artefacts.
-3. ✅ Verify model integrity (hashes, configs, embeddings).
-4. ✅ Analyse for prompt injection, poisoning, or exfiltration attempts.
-5. ✅ Contain and eradicate malicious artefacts.
-6. ✅ Restore clean versions of models and embeddings.
-7. ✅ Apply lessons learned to improve monitoring and access controls.
+- [ ] Identify if the incident is AI-specific or traditional.
+- [ ] Collect prompts, responses, logs, and model artefacts.
+- [ ] Verify model integrity (hashes, configs, embeddings).
+- [ ] Analyse for prompt injection, poisoning, or exfiltration attempts.
+- [ ] Contain and eradicate malicious artefacts.
+- [ ] Restore clean versions of models and embeddings.
+- [ ] Apply lessons learned to improve monitoring and access controls.
 
 ---
